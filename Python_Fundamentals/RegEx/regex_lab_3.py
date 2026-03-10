@@ -1,0 +1,13 @@
+import re
+
+# 13/Jul/1928, 10-Nov-1934, 25.Dec.1937
+# 13/Jul/1928 10-Nov-1934 25.Dec.1937
+
+text = input()
+
+#pattern = "\\b(\\d{2})([.-/])([A-Z][a-z]{2})\\2(\\d{4})\\b"
+pattern = "\\b(\\d{2})([.\\-/])([A-Z][a-z]{2})\\2(\\d{4})\\b"
+matches = re.findall(pattern, text)
+
+for match in matches:
+    print(f"Day: {match[0]}, Month: {match[2]}, Year: {match[3]}")
