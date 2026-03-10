@@ -3,7 +3,7 @@ import re
 # >>sofa<<10.5!5
 
 pattern = r"(?<!\S)>>(\w+)<<((?:[0]|[1-9][0-9]*)(?:\.\d+)?)!([0]|[1-9][0-9]*)"
-
+test=1
 furnitures = []
 total_sum = 0
 
