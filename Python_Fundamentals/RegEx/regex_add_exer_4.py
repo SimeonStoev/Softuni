@@ -13,7 +13,7 @@ def get_demon_health(name):
 
 def get_demon_damage(name):
     result = 0
-    pattern = r"([+-])?[0-9]+(\.[0-9]+)*"  # integer or floating point number pattern
+    pattern = r"[+-]?\d+(\.\d+)?"  # r"([+-])?[0-9]+(\.[0-9]+)*"  # integer or floating point number pattern
     add_pattern = r"[\/*]+"
     matches = re.finditer(pattern, name)
     for match in matches:
