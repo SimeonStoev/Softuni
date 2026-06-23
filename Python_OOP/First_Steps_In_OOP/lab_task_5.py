@@ -1,0 +1,11 @@
+class Music:
+    def __init__(self, title, artist, lytics):
+        self.title = title
+        self.artist = artist
+        self.lyrics = lytics
+
+    def print_info(self):
+        return f'This is "{self.title}" from "{self.artist}"'
+
+    def play(self):
+        return self.lyrics
