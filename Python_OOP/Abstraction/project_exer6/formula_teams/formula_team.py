@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class FormulaTeam(ABC):
     def __init__(self, budget: int):
-        self.__budget = budget
+        self.budget = budget
 
     @property
     def budget(self) -> int:
