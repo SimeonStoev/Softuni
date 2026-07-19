@@ -1,4 +1,35 @@
+from abc import ABC, abstractmethod
 from typing import List, Tuple
+
+
+class PaymentMethod(ABC):
+    @abstractmethod
+    def pay(self, amount: float) -> None:
+        pass
+
+
+class CreditCardPayment(PaymentMethod):
+    def pay(self, amount: float):
+        print(f'Processing credit card payment for ${amount}')
+
+
+class PaypalPayment(PaymentMethod):
+    def pay(self, amount: float):
+        print(f'Processing PayPal payment for ${amount}')
+
+
+class ApplePayment(PaymentMethod):
+    def pay(self, amount: float):
+        print(f'Processing Apple payment for ${amount}')
+
+
+class PaymentProcessor:
+    def __init__(self, payment_method: PaymentMethod):
+        self.payment_method = payment_method
+
+    def process_payment(self, order: "Order"):
+        total_amount = order.calculate_total()
+        self.payment_method.pay(total_amount)
 
 
 class Order:
@@ -30,27 +61,21 @@ class Order:
         """
         return sum(quantity * price for _, quantity, price in self.items)
 
-    def process_payment(self, payment_type: str) -> None:
-        """
-        Process the payment based on the payment type.
-
-        Args:
-        payment_type (str): The type of payment (e.g., 'credit_card', 'paypal').
-        """
-        total_amount = self.calculate_total()
-
-        if payment_type == 'credit_card':
-            print(f'Processing credit card payment for ${total_amount}')
-        elif payment_type == 'paypal':
-            print(f'Processing PayPal payment for ${total_amount}')
-        else:
-            print('Unsupported payment type.')
-
-
 
 order_obj = Order([
- ('Apple', 2, 1.0),
- ('Banana', 5, 0.5)
+    ('Apple', 2, 1.0),
+    ('Banana', 5, 0.5)
 ])
 
-order_obj.process_payment('credit_card')
+order_obj2 = Order([
+    ('Apple', 5, 1.0),
+    ('Banana', 10, 0.5)
+])
+
+credit_card_payment = CreditCardPayment()
+payment_processor = PaymentProcessor(credit_card_payment)
+payment_processor.process_payment(order_obj)
+
+apple_payment = ApplePayment()
+payment_processor = PaymentProcessor(apple_payment)
+payment_processor.process_payment(order_obj2)

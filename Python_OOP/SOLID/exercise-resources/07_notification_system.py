@@ -13,45 +13,60 @@ class NotificationSender(ABC):
     def send(self, message: str):
         pass
 
+    def is_under_maintenance_validation(self):
+        if self.is_under_maintenance:
+            raise UnderMaintenanceException("This service is currently under maintenance.")
+
 
 class EmailSender(NotificationSender):
     def send(self, message: str):
+        self.is_under_maintenance_validation()
         print(f"Sending email with message: {message}")
 
 
 class SMSSender(NotificationSender):
     def send(self, message: str):
+        self.is_under_maintenance_validation()
         print(f"Sending SMS with message: {message}")
 
 
 class PushSender(NotificationSender):
-    def send(self, message: str):
+    def __init__(self):
+        super().__init__()
         self.is_under_maintenance = True
-        raise UnderMaintenanceException('The Push Sender is under maintenance.')
+
+    def send(self, message: str):
+        self.is_under_maintenance_validation()
+        print(f"Sending push notification with message: {message}")
+
+
+class TVSender(NotificationSender):
+    def send(self, message: str):
+        self.is_under_maintenance_validation()
+        print(f"Sending TV with message: {message}")
 
 
 class NotificationService:
-    def __init__(self, sender_type: str):
-        if sender_type == "email":
-            self.sender = EmailSender()
-        elif sender_type == "sms":
-            self.sender = SMSSender()
-        elif sender_type == "push":
-            self.sender = PushSender()
+    def __init__(self, sender):
+        self.sender = sender
 
     def notify(self, message: str):
         self.sender.send(message)
 
 
 try:
-    email_service = NotificationService("email")
+    email_service = NotificationService(EmailSender())
     email_service.notify("Hello via email!")
 
-    sms_service = NotificationService("sms")
+    sms_service = NotificationService(SMSSender())
     sms_service.notify("Hello via SMS!")
 
-    push_service = NotificationService("push")
+    tv_service = NotificationService(TVSender())
+    tv_service.notify("Hello via TV!")
+
+    push_service = NotificationService(PushSender())
     push_service.notify("Hello via Push!")
+
 
 except UnderMaintenanceException as ex:
     print(ex)
