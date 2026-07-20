@@ -1,6 +1,7 @@
 class dictionary_iter:
     def __init__(self, dictionary: dict):
         self.dictionary = dictionary
+        self.items = list(self.dictionary.items())
         self.current = -1
 
     def __iter__(self):
@@ -8,10 +9,8 @@ class dictionary_iter:
 
     def __next__(self):
         self.current += 1
-        if self.current < len(self.dictionary):
-            key = list(self.dictionary.keys())[self.current]
-            value = list(self.dictionary.values())[self.current]
-            return (key, value)
+        if self.current < len(self.items):
+            return self.items[self.current]
         raise StopIteration
 
 

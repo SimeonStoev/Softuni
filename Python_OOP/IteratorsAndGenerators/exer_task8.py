@@ -1,11 +1,9 @@
+import math
+
+
 def get_primes(numbers: list):
     for number in numbers:
-        is_prime = True
-        for numb in range(2, number):
-            if number % numb == 0:
-                is_prime = False
-                break
-        if is_prime and number > 1:
+        if number > 1 and all(number % i != 0 for i in range(2, math.isqrt(number) + 1)):
             yield number
 
 
