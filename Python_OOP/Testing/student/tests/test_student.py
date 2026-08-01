@@ -18,11 +18,22 @@ class TestStudent(TestCase):
         self.assertEqual(result, "Course already added. Notes have been updated.")
         self.assertEqual(student.courses, {"english": ["good", "nice", "great"]})
 
+    def test_enroll_course_already_added_with_multiple_notes(self):
+        student = Student("one", {"english": ["good"]})
+        result = student.enroll("english", ["great", "excellent"])
+        self.assertEqual(result, "Course already added. Notes have been updated.")
+        self.assertEqual(student.courses, {"english": ["good", "great", "excellent"]})
+
     def test_enroll_new_course_with_notes(self):
         student = Student("one", {"english": ["good", "nice"]})
         result = student.enroll("french", ["excellent"], "Y")
         self.assertEqual(result, "Course and course notes have been added.")
         self.assertEqual(student.courses, {"english": ["good", "nice"], "french": ["excellent"]})
+
+        result = student.enroll("travelling", ["excellent"])
+        self.assertEqual(result, "Course and course notes have been added.")
+        self.assertEqual(student.courses,
+                         {"english": ["good", "nice"], "french": ["excellent"], "travelling": ["excellent"]})
 
     def test_enroll_new_course_without_notes(self):
         student = Student("one", {"english": ["good", "nice"]})
