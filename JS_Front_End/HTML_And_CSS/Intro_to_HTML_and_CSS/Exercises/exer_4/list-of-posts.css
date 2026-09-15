@@ -1,0 +1,11 @@
+.time {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.time_and_author {
+    color: gray;
+}
