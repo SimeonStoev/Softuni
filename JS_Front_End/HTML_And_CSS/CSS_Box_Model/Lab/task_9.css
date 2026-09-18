@@ -1,0 +1,19 @@
+.wrapper1 {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper2 {
+    font-size: 24px;
+}
+
+.wrapper3 {
+    font-weight: bold;
+}
+
+.wrapper4 {
+    font-style: italic;
+}
+
+.wrapper5 {
+    font-variant: small-caps;
+}

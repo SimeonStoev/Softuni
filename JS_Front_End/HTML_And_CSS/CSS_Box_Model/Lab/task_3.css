@@ -1,0 +1,14 @@
+.div1 {
+    margin: 40px;
+    border: 2px solid black;
+}
+
+.div2 {
+    margin: 10px 30px 20px 40px;
+    border: 2px solid black;
+}
+
+.div3 {
+    margin: -20px;
+    border: 2px solid black;
+}

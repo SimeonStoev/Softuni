@@ -1,0 +1,24 @@
+.div1 {
+    border: 1px solid black;
+    height: 200px;
+    margin: 20px;
+}
+
+.div2 {
+    border: 1px solid black;
+    height: 50%;
+    margin: 20px;
+}
+
+.div3 {
+    border: 1px solid black;
+    height: 50vh;
+    margin: 20px;
+}
+
+.div4 {
+    border: 1px solid black;
+    min-height: 100px;
+    max-height: 300px;
+    margin: 20px;
+}
