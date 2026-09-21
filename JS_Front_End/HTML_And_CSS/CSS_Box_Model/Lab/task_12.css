@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Lato, sans-serif;
+}
+
+p, ol, ul {
+    padding-bottom: 1.5rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: Georgia;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.div2 {
+    text-align: right;
+}
+
+blockquote {
+    border-left: 5px solid lightgray;
+    padding-left: 1em;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+hr {
+    background-color: lightgray;
+    height: 2px;
+}
