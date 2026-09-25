@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    min-height: 600px;
+    background-image: url('/Resources/Resources-exer/09/images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.inner {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner p {
+    font-size: 1.3rem;
+}
