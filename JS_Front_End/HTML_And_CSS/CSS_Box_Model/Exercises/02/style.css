@@ -1,0 +1,18 @@
+html {
+    border: 2px solid green;
+}
+
+.container {
+    border: 2px solid blue;
+    padding: 1em;
+    margin: 2em 7em;
+}
+
+.container div {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+}

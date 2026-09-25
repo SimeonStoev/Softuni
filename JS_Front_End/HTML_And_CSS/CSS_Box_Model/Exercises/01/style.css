@@ -1,0 +1,52 @@
+.margin-box {
+    position: relative;
+    border: 1px dashed black;
+    background-color: #e8745a; /* портокалово */
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 4em auto auto;
+    width: 50%;
+}
+
+.border-box {
+    position: relative;
+    border: 1px dashed black;
+    background-color: #fde8c8; /* светло бежово */
+    padding: 20px;
+}
+
+.padding-box {
+    position: relative;
+    border: 1px dashed black;
+    background-color: #90c97a; /* зелено */
+    padding: 20px;
+    margin: 1em;
+}
+
+.content-box {
+    position: relative;
+    background-color: #a8c8e8; /* светло синьо */
+    border: 1px dashed black;
+    text-align: center;
+    padding: 20px;
+    margin: 1em;
+}
+
+.margin-box-span {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.border-box-span {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.padding-box-span {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}

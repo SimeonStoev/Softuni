@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.main_content {
+    border: 1px solid lightgray;
+    margin: 2em auto auto;
+    padding: 2em;
+    max-width: 50%;
+    font-family: 'Lato', sans-serif;
+    border-radius: 1%;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.first_par {
+    font-size: 1.3em;
+}
+
+footer {
+    font-style: italic;
+}
