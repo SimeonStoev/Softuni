@@ -1,0 +1,34 @@
+body {
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #eeeeee;
+    margin: 2em auto;
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    padding-left: 0.5em;
+
+}
+
+li {
+    margin: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: orange;
+    font-weight: 600;
+}
