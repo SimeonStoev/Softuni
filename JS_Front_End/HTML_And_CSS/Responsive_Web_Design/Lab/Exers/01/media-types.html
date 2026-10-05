@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./media-types.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="header-container">
+    <h1>Media Types</h1>
+
+    <p>https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types
+    </p>
+    <p>Media types describe the general category of a device. Except when using the not or only logical operators, the
+        media
+        type is optional and the all type is implied.
+    </p>
+</div>
+
+<div class="container">
+    <h2>all</h2>
+    <p>Suitable for all devices</p>
+    <p class="outer-p"> @media all {
+       <p class="inner-p"> * { <br>
+        padding: 0; <br>
+        margin: 0; <br>
+        box-sizing: border-box; <br>
+        } <br>
+        <br>
+        body { <br>
+        padding: 2em; <br>
+        font: 14px/1.5 Lato, sans-serif; <br>
+        } <br>
+        <br>
+        p { <br>
+        padding-bottom: 1.5em; <br>
+        } <br>
+        </p>
+    }
+    </p>
+</div>
+
+
+<div class="container">
+    <h2>print</h2>
+    <p>Intended for paged material and documents viewed on a screen in print preview mode</p>
+    <p class="outer-p">@media print {
+        <p class="inner-p">
+        body::before { <br>
+        display: block; <br>
+        content: 'The page is using a print preview or it was printed'; <br>
+        }
+    </p>
+        }</p>
+</div>
+
+
+<div class="container">
+    <h2>screen</h2>
+    <p>Intended primarily for screens</p>
+    <p class="outer-p">@media screen {
+        <p class="inner-p">
+        body::before { <br>
+        display: block; <br>
+        content: 'The page is being shown on a screen'; <br>
+        }
+</p>
+        }</p>
+</div>
+
+</body>
+</html>
