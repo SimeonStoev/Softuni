@@ -1,0 +1,35 @@
+body {
+    background-color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 80%;
+    margin: 3em auto auto;
+    padding: 1em;
+    box-shadow: 10px 9px 49px 2px rgba(0, 0, 0, 0.41);
+}
+
+.item {
+    border: 1px solid #CCCCCC;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .flex-container {
+        display: flex;
+    }
+
+    .flex-item-1 {
+        flex: 2;
+    }
+
+    .flex-item-2 {
+        margin-left: 0;
+        flex: 1;
+    }
+}
