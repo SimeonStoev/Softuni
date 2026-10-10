@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 1em auto;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+ul ul {
+    display: none;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1em 1.25em;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+.menu-btn {
+    color: black;
+    padding: 1em 1.25em;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+
+@media (600px < width <= 800px) {
+    a {
+        padding: 0.5em 0.75em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+}
+
+@media (width <= 600px) {
+    .btn-close {
+        display: none;
+    }
+
+    .btn-open {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #toggle-menu:checked ~ label .btn-open {
+        display: none;
+    }
+
+    #toggle-menu:checked ~ label .btn-close {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ h1 {
+        display: none;
+    }
+
+    .container:has(#toggle-menu:checked) h1 {
+        color: transparent;
+        margin: 0;
+    }
+
+    .container:has(#toggle-menu:checked) {
+        flex-direction: column;
+    }
+
+    #toggle-menu:checked ~ nav {
+        display: block;
+    }
+
+
+    ul, ul ul {
+        display: block;
+    }
+
+
+    a {
+        display: block;
+        margin: 3px 0;
+    }
+
+
+    label {
+        align-self: flex-end;
+    }
+}
