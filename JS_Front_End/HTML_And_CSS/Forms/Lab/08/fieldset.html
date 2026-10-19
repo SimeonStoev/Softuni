@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./fieldset.css">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Fieldset</h1>
+<p>The <strong>fieldset</strong> element is used to group several controls as well as labels within a web form.
+</p>
+
+<div class="code">
+<pre>
+&lt;fieldset>
+    &lt;legend&gt;Login&lt;/legend&gt;
+
+    &lt;p class="field"&gt;
+        &lt;label for="username">Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username"&gt;
+    &lt;/p&gt;
+
+    &lt;p class="field"&gt;
+        &lt;label for="password">Password:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password"&gt;
+    &lt;/p&gt;
+
+    &lt;input type="submit" value="Login"&gt;
+
+&lt;/fieldset&gt;
+</pre>
+</div>
+
+
+<fieldset>
+    <legend>Login</legend>
+
+    <p class="field">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </p>
+
+    <p class="field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </p>
+
+    <input type="submit" value="Login">
+
+</fieldset>
+
+</body>
+</html>

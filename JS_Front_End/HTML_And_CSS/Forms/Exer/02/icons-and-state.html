@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./icons-and-state.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="card">
+    <form method="POST" action="#">
+        <p>Login</p>
+        <hr>
+        <div class="flex-field">
+            <label for="email">Email <span class="required-sybol">*</span></label>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <input type="email" id="email" name="email" required>
+        <p class="p-descr">example: user@example.com</p>
+
+        <div class="flex-field">
+            <label for="password">Password <span class="required-sybol">*</span></label>
+            <i class="fa-solid fa-key"></i>
+        </div>
+        <input type="password" id="password" name="password" required>
+        <p class="p-descr">minimum 6 characters, letters and numbers, at least 1 special character</p>
+
+        <input class="submit-btn" type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

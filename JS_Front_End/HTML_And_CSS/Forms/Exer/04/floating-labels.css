@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 30%;
+    margin: 2em auto;
+    background-color: #FFFFFF;
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: -11px 12px 44px -8px rgba(0, 0, 0, 0.38);
+}
+
+label, input {
+    display: block;
+}
+
+.submit-btn {
+    display: block;
+    background-color: #EFEFEF;
+    color: black;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    margin: 2em 0 1em 0;
+}
+
+form p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.login {
+    padding-bottom: 1em;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 0.9em;
+    padding-bottom: 0.1em;
+    margin-top: 3em;
+}
+
+form input {
+    width: 100%;
+    padding: 0 1em;
+    border: 1px none #CCCCCC;
+    border-bottom-style: solid;
+}
+
+.p-descr {
+    font-style: italic;
+    font-size: 0.6em;
+    color: #A5A5A5;
+    margin-top: 1px;
+    margin-bottom: 1.5em;
+
+}
+
+@media (width <= 800px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (width <= 600px) {
+    .card {
+        width: 80%;
+    }
+}
