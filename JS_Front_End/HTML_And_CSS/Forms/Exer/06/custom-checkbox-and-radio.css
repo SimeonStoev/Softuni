@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.radio-buttons, .checkbox-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.radio-section {
+    margin-bottom: 3em;
+}
+
+.radio-section h2 {
+    margin-top: 0;
+}
+
+/* Radio button styles */
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.radio-custom {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* Вътрешен кръг когато е checked */
+.radio-custom::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #C67615;
+    display: none;
+}
+
+/* Когато radio е избран */
+input[type="radio"]:checked + .radio-custom {
+    background-color: #FFA500;
+}
+
+input[type="radio"]:checked + .radio-custom::after {
+    display: block;
+}
+
+/* Checkbox button styles */
+.checkbox-group input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.checkbox-custom {
+    width: 4em;
+    height: 2em;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.25em;
+    transition: background-color 0.3s;
+}
+
+/* Вътрешен кръг когато е checked */
+.checkbox-custom::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #C67615;
+}
+
+/* Когато checkbox е избран */
+input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #FFA500;
+    justify-content: flex-start;
+}
+
+@media (width <= 1000px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media (width <= 800px) {
+    .card {
+        width: 80%;
+    }
+}
