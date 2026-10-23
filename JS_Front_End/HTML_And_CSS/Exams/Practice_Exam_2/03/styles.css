@@ -191,3 +191,79 @@ header {
     width: 30%;
     align-self: center;
 }
+
+.premium-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.premium-descr h1 {
+    margin: 0;
+    padding: 1em;
+}
+
+.premium-descr p {
+    margin: 0;
+    padding-bottom: 2em;
+    font-size: 12px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5em 1em;
+}
+
+.row p {
+    padding: 0;
+    flex: 6;
+    text-align: left;
+}
+
+.row img:nth-child(2) {
+    width: 17px;
+    height: 17px;
+    flex: 1
+}
+
+.row img:nth-child(3) {
+    width: 15px;
+    height: 15px;
+    flex: 1;
+}
+
+.odd {
+    background-color: #CBCACA;
+}
+
+.even {
+    background-color: #7FD59E;
+}
+
+.premium-descr-rows div:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.premium-descr-rows div:nth-child(6) {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+    background-color: #191414;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
