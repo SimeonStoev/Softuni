@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond';
+}
+
+body {
+    background-color: #F8F5EE;
+    margin: 0;
+}
+
+.nav-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+}
+
+.nav-line nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-line nav ul li a {
+    text-decoration: none;
+    color: #264648;
+    font-weight: 600;
+}
+
+.nav-line nav ul li:nth-child(1) a {
+    color: #E7816B;
+}
+
+.nav-line button {
+    background-color: #203C35;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: #DCE6DA;
+}
+
+.hero-section img {
+    flex: 1;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    margin-right: -7.5em;
+    filter: brightness(0.9);
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 4em;
+}
+
+.hero-content h1 {
+    color: #203C35;
+    font-size: 5em;
+    margin: 0;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    color: #66736D;
+    font-size: 22px;
+    width: 70%;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.hero-buttons button {
+    border: 1px solid #203C35;
+    border-radius: 20px;
+    padding: 1em 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #203C35;
+    color: #FEFEFE;
+}
+
+.secondary {
+    color: #2E4136;
+    background-color: transparent;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 4em 0;
+    gap: 1.5em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFDF8;
+    border: 1px solid #E4E4D9;
+    border-radius: 10px;
+    padding: 2em 3em 2em 2em;
+    width: 30%;
+}
+
+.card img {
+    padding: 3em 0;
+    width: 100%;
+}
+
+
+.card .smaller-img {
+    padding-top: 4.5em;
+}
+
+.card h2 {
+    color: #203C35;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.card .first-h2 {
+    width: 63%;
+}
+
+.card .second-h2 {
+    width: 75%;
+    padding-top: 10px;
+}
+
+.card p {
+    color: #66736D;
+    line-height: 1.8;
+    margin-bottom: 0;
+    width: 85%;
+}
+
+.about-us {
+    display: flex;
+    gap: 2em;
+    background-color: #E7EDE5;
+    padding: 5em 2em 5em 4em;
+}
+
+.about-us img {
+    border-radius: 10px;
+    flex: 1;
+}
+
+.about-us-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-wrapper .little-heading {
+    color: #BF7863;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 1em;
+    letter-spacing: 0.1em;
+}
+
+.about-us-wrapper h2 {
+    font-size: 3.8em;
+    width: 80%;
+    color: #203C35;
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+
+.about-us-wrapper p {
+    margin: 0;
+    line-height: 2;
+    color: #66736D;
+    width: 74%;
+}
+
+.about-us-name {
+    background-color: #BEC1BE;
+    color: #323232;
+    padding: 0.3em 0;
+}
+
+.contact-wrapper {
+    background-color: #FFFDF8;
+    padding: 5em 3em;
+}
+
+.contact-section p {
+    color: #BF7863;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.contact-section h2 {
+    font-size: 3em;
+    padding: 1rem 0 3rem 0;
+    margin: 0;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 1em;
+    padding-bottom: 1rem;
+}
+
+.input-wrapper input:nth-child(1) {
+    flex: 1
+}
+
+.input-wrapper input:nth-child(2) {
+    flex: 1;
+}
+
+.contact-section input {
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #D8DED6;
+    background-color: #F8F5EE;
+}
+
+.outer-input {
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #D8DED6;
+    background-color: #F8F5EE;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+footer {
+    background-color: #203C35;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer nav {
+    padding-bottom: 1em;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 0;
+    font-size: 10px;
+    color: #C8DBD8;
+}
