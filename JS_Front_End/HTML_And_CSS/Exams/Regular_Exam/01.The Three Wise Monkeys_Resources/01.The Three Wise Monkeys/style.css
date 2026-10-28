@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+/*
+Работено е на латпоп с размер на екрана 15.6 инча на нормален chrome прозорец, без да се използва inspect mode.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3EADB;
+    font-family: 'Lora', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 2em auto 4em auto;
+    border: 2px solid #B79763;
+    border-radius: 10px;
+    padding: 1.5em 3em;
+    background-color: #E9D9BD;
+}
+
+.first-p {
+    text-align: center;
+    color: #9A7444;
+    margin: 0;
+    padding-top: 1em;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.wrapper h1 {
+    text-align: center;
+    color: #493522;
+    margin: 0;
+    padding: 0.5em 0 1em 0;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 4em;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #75583D;
+    color: #FFF5E6;
+    border: 1px solid #9C7951;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 1px 3px 13px -4px rgba(0, 0, 0, 0.41);
+}
+
+.card img {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+
+.card-p-wrapper {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.card-p-wrapper p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.card button {
+    display: block;
+    margin: 4em auto 1em auto;
+    background-color: transparent;
+    color: #F5DFB7;
+    border: 1px solid #F5DFB7;
+    border-radius: 20px;
+    padding: 0.75em 1.25em;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.5em;
+    padding: 3em 0 1em 0;
+}
+
+.icon-wrapper {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #75583D;
+    color: #FFF5E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    color: #795A3A;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.footer-underscore {
+    color: #49353F;
+    text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+1. Navigation
+Home
+About Us
+Portfolio
+Blog
+Contact Us
+Button: Contact Us
+2. Hero Section
+Thoughtful Design. Lasting Impressions.
+Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt
+Buttons:
+- Explore Our Studio
+- Tell Us Your Story
+3. Services
+Brand Identity & Art Direction
+Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.
+Digital Experiences & Development
+Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.
+4. About Us
+OUR PHILOSOPHY
+Made With Purpose. Built to Inspire.
+At Atelier Bloom, we believe great design begins with listening. Our independent studio brings together strategy, imagination, and craftsmanship to create identities and digital spaces that connect with real people. We value honest collaboration, thoughtful details, and ideas that continue to grow long after launch.
+5. Contact Section
+LET’S COLLABORATE
+Tell Us Your Story
+Form placeholders:
+- Your email address
+- Project type or subject
+- Tell us about your idea...
+6. Footer
+Home
+About Us
+Portfolio
+Blog
+Contact
+© 2026 — Atelier Bloom
