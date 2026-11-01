@@ -7,4 +7,4 @@ function wordsUppercase(str) {
     console.log(result.slice(0, -2));
 }
 
-wordsUppercase('hello');
+wordsUppercase('hello,world');
