@@ -9,7 +9,11 @@ function consumeSpiciesFromYield(currentYield) {
         currentYield -= 10;
     }
 
-    consumedSpices -= dailyConsumption;
+    if (consumedSpices - dailyConsumption <= 0) {
+        consumedSpices = 0;
+    } else {
+        consumedSpices -= dailyConsumption;
+    }
 
     console.log(days);
     console.log(consumedSpices);
