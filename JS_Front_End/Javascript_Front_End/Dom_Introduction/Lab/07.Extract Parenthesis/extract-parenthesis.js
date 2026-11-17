@@ -5,6 +5,3 @@ function extract(content) {
     let matches = element.textContent.match(regex);
     return matches.join("; ");
 }
-
-let text = extract("content");
-console.log(text);
